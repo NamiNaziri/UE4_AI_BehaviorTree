@@ -5,16 +5,16 @@ Final project of my Game AI course
 # Introduction
 For my final project I tried to use the knowledge I gained during the course and create a boss AI using behavior tree in Unreal Engine 4. I went with Khaimera as the player character and Riktor as the boss. These characters are from paragon pack which can be found in the Unreal Engine marketplace. 
 
-# Behavior Tree
+# Behavior Tre
 
-Each behavior tree is consist of several selectors, sequences, decorators, services and of course lots of tasks.
-The AI has diffrent sequences. these sequences are dependent on player's location and wheder he is dead or not. 
+Each behavior tree is consist of several selectors, sequences, decorators, services and ofcourse lots of tasks.
+The AI has diffrent sequences. these sequences are dependent on player's location and whether the player is dead or not. 
 
 ## Attacking Sequence
 
 ![image](https://user-images.githubusercontent.com/49837425/145900015-ba471fcf-cecc-43f2-8752-40e00e2e96d0.png)
 
-Attack sequence is a simple sequence which first uses the Blackboard Based Condition decorator to check if the boss is close enough to attack the player. If he is close enough, he will attack. After each attack he has cooldown of 0.2 second. The attacking state uses combo system. This means boss can attack the player by performing combo. CooldownBB_Based is the node which inherits from the cooldown decorator of the engine. The responsibility of this decorator is that when the boss performed his combo he gets a cooldown of 4 second. During this 4 seconds he will strafe randomely around the player (Using the random strafe sequence)
+Attack sequence is a simple sequence which first uses the Blackboard Based Condition decorator to check if the boss is close enough to attack the player. If he is close enough, he will attack. After each attack the boss has cooldown of 0.2 second. The attacking state uses combo system. This means boss can attack the player by performing combo. CooldownBB_Based is the node which inherits from the cooldown decorator of the engine. The responsibility of this decorator is that when the boss performed his combo he gets a cooldown of 4 second. During this 4 seconds he will strafe randomely around the player (Using the random strafe sequence)
 
 https://user-images.githubusercontent.com/49837425/145902544-e964585d-acb0-4aa4-b291-aa437a37f2e9.mp4
 
