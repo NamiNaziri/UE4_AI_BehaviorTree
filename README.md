@@ -5,7 +5,7 @@ Final project of my Game AI course
 # Introduction
 For my final project I tried to use the knowledge I gained during the course and create a boss AI using behavior tree in Unreal Engine 4. I went with Khaimera as the player character and Riktor as the boss. These characters are from paragon pack which can be found in the Unreal Engine marketplace. 
 
-# Behavior Tre
+# Behavior Tree
 
 Each behavior tree is consist of several selectors, sequences, decorators, services and ofcourse lots of tasks.
 The AI has diffrent sequences. these sequences are dependent on player's location and whether the player is dead or not. 
